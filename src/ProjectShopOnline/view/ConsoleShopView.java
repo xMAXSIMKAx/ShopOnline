@@ -1,6 +1,7 @@
-package ProjectShopOnline.model;
+package ProjectShopOnline.view;
 
-import java.text.DateFormat;
+import ProjectShopOnline.model.Order;
+
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
