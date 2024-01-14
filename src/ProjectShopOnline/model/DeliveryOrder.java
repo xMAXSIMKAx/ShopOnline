@@ -1,9 +1,5 @@
 package ProjectShopOnline.model;
 
-import ProjectShopOnline.controller.ShopController;
-import ProjectShopOnline.view.ConsoleShopView;
-import ProjectShopOnline.view.ShopView;
-
 public class DeliveryOrder implements Order {
     private Product product;
     private int quantity;
