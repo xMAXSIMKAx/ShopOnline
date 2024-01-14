@@ -1,4 +1,4 @@
-package ProjectShopOnline.model;
+package entity;
 
 public class Product {
     private String name;

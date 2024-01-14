@@ -1,11 +1,13 @@
 package ProjectShopOnline.model;
 
-public class DeliveryOrder implements Order {
+import entity.Product;
+
+public class DeliveryOrderModel implements Order {
     private Product product;
     private int quantity;
     private boolean deliveryOption;
 
-    public DeliveryOrder(Product product, int quantity, boolean deliveryOption) {
+    public DeliveryOrderModel(Product product, int quantity, boolean deliveryOption) {
         this.product = product;
         this.quantity = quantity;
         this.deliveryOption = deliveryOption;

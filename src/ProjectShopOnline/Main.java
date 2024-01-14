@@ -1,10 +1,10 @@
 package ProjectShopOnline;
 
 import ProjectShopOnline.controller.ShopController;
-import ProjectShopOnline.model.DeliveryOrder;
-import ProjectShopOnline.model.InStoreOrder;
+import ProjectShopOnline.model.DeliveryOrderModel;
+import ProjectShopOnline.model.InStoreOrderModel;
 import ProjectShopOnline.model.Order;
-import ProjectShopOnline.model.Product;
+import entity.Product;
 import ProjectShopOnline.view.ConsoleShopView;
 import ProjectShopOnline.view.ShopView;
 
@@ -18,10 +18,10 @@ public class Main {
         ShopController controller = new ShopController(consoleView);
 
         int inStoreQuantity = ((ConsoleShopView) consoleView).getInputQuantity();
-        Order inStoreOrder = new InStoreOrder(laptop, inStoreQuantity);
+        Order inStoreOrder = new InStoreOrderModel(laptop, inStoreQuantity);
 
         boolean deliveryOption = ((ConsoleShopView) consoleView).getDeliveryOption();
-        Order deliveryOrder = new DeliveryOrder(laptop, 1, deliveryOption);
+        Order deliveryOrder = new DeliveryOrderModel(laptop, 1, deliveryOption);
 
         controller.processOrder(inStoreOrder);
         controller.processOrder(deliveryOrder);

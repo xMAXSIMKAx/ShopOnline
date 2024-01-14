@@ -1,6 +1,6 @@
 package ProjectShopOnline.view;
 
-import ProjectShopOnline.model.DeliveryOrder;
+import ProjectShopOnline.model.DeliveryOrderModel;
 import ProjectShopOnline.model.Order;
 
 import java.text.DecimalFormat;
@@ -23,10 +23,10 @@ public class ConsoleShopView implements ShopView {
     @Override
     public void displayOrderDetails(Order order) {
         System.out.println("Order Details:");
-        if (order instanceof DeliveryOrder) {
-            double productCost = order.calculateTotalCost() - ((DeliveryOrder) order).calculateDeliveryCost();
+        if (order instanceof DeliveryOrderModel) {
+            double productCost = order.calculateTotalCost() - ((DeliveryOrderModel) order).calculateDeliveryCost();
             System.out.println("Product Cost: $" + df.format(productCost));
-            System.out.println("Delivery Cost: $" + df.format(((DeliveryOrder) order).calculateDeliveryCost()));
+            System.out.println("Delivery Cost: $" + df.format(((DeliveryOrderModel) order).calculateDeliveryCost()));
         } else {
             System.out.println("Total Cost: $" + df.format(order.calculateTotalCost()));
         }

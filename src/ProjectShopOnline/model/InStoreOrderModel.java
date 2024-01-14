@@ -1,10 +1,12 @@
 package ProjectShopOnline.model;
 
-public class InStoreOrder implements Order {
+import entity.Product;
+
+public class InStoreOrderModel implements Order {
     private Product product;
     private int quantity;
 
-    public InStoreOrder(Product product, int quantity) {
+    public InStoreOrderModel(Product product, int quantity) {
         this.product = product;
         this.quantity = quantity;
     }
