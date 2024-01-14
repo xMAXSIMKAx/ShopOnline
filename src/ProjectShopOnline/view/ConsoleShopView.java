@@ -27,10 +27,6 @@ public class ConsoleShopView implements ShopView {
         System.out.println("=====================");
     }
 
-    @Override
-    public void displayErrorMessage(String message) {
-        System.out.println("Error: " + message);
-    }
 
     public int getInputQuantity() {
         System.out.print("Enter quantity: ");
