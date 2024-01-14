@@ -15,6 +15,12 @@ public class ConsoleShopView implements ShopView {
     }
 
     @Override
+    public void displayWelcomeMessage() {
+        System.out.println("Welcome to the Online Shop TechnicWorld\n");
+
+    }
+
+    @Override
     public void displayOrderDetails(Order order) {
         System.out.println("Order Details:");
         if (order instanceof DeliveryOrder) {

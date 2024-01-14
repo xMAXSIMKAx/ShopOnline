@@ -12,7 +12,9 @@ public class Main {
     public static void main(String[] args) {
         Product laptop = new Product("Laptop", 15000.0);
 
+
         ShopView consoleView = new ConsoleShopView();
+        consoleView.displayWelcomeMessage();
         ShopController controller = new ShopController(consoleView);
 
         int inStoreQuantity = ((ConsoleShopView) consoleView).getInputQuantity();
