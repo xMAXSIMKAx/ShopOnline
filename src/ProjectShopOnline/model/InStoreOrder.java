@@ -1,4 +1,4 @@
-package model;
+package ProjectShopOnline.model;
 
 public class InStoreOrder implements Order {
     private Product product;
