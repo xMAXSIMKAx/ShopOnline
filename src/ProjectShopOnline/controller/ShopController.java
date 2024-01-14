@@ -14,7 +14,7 @@ public class ShopController {
         try {
             view.displayOrderDetails(order);
         }catch (Exception e){
-            view.displayErrorMessage("Error processing order: "+ e.getMessage());
+            view.displayErrorMessage("Error processing order: "+ e.getLocalizedMessage());
         }
     }
 }
